@@ -1,4 +1,4 @@
-#1
+#1.1
 '''
 import math
 r=eval(raw_input("Enter the length from the center to a vertex:"))
@@ -6,7 +6,7 @@ s=2*r*(math.sin(math.pi/5))
 Area=(5*s*s)/(4*(math.tan(math.pi/5)))
 print('The area of the pentagon is {:.2f}'.format(Area))
 '''
-#2
+#1.2
 '''
 import math
 x1,y1=eval(raw_input("Enter point 1(latitude and longitude) in degrees:"))
@@ -20,14 +20,14 @@ part1=math.acos(math.sin(x1)*math.sin(x2)+math.cos(x1)*math.cos(x2)*math.cos(y1-
 d=part1*radius
 print("The distance between the two points is {} km ".format(d))
 '''
-#3
+#1.3
 '''
 import math
 s=eval(raw_input("Enter the side:"))
 Area=(5*s*s)/(4*math.tan(math.pi/5))
 print("The area of the pentagon is {}".format(Area))
 '''
-#4
+#1.4
 '''
 import math
 n=eval(raw_input("Enter the number of sides:"))
@@ -37,13 +37,13 @@ part2=4*math.tan(math.pi/n)
 Area=part1/part2
 print("The area of the polygn is {}".format(Area))
 '''
-#5
+#1.5
 '''
 x=eval(raw_input("Enter an ASCII code:"))
 y=chr(x)
 print("The character is {}".format(y))
 '''
-#6
+#1.6
 '''
 name=str(raw_input("Enter employee's name:"))
 hours=eval(raw_input("Enter number of hours worked in a week:"))
@@ -64,7 +64,7 @@ print("  State Withholding(9.0%):${:.2f}".format(S))
 print("  Total Deduction:${:.2f}".format(F+S))
 print("  Net Pay:${:.2f}".format(N))
 '''
-#7
+#1.7
 '''
 number=int(raw_input("Enter an integer:"))
 a=number/1000
@@ -74,7 +74,7 @@ d=number-a*1000-b*100-c*10
 number2=d*1000+c*100+b*10+a
 print("The reversed number is{}".format(number2))
 '''
-#8
+#1.8
 '''
 res=' '
 for i in "1329076463@qq.com":
@@ -82,7 +82,7 @@ for i in "1329076463@qq.com":
 print(res)
 '''
 
-#9
+#2.1
 '''
 import math
 a,b,c=eval(raw_input("Enter a,b,c:"))
@@ -96,7 +96,7 @@ elif (b*b-4*a*c)==0:
 else:
     print("The equation has no real roots")
 '''
-#10
+#2.2
 '''
 import random
 num1=random.randrange(0,100)
@@ -109,12 +109,12 @@ if x==s:
 else:
     print("False")
 '''
-#11
+#2.3
 import math
 number1=eval(raw_input"Enter today's day:")
 number2=eval(raw_input"Enter the number of days elapsed since today:")
 def today(n):
-    elif n==0:
+    if n==0:
         return 'Sunday'
     elif n==1:
         return 'Monday'
@@ -130,7 +130,7 @@ def today(n):
         return 'Saturday'
 s=number2%7
 print("Today is {} and the future day is {}".format(today(number1),today(s)))
-#12
+#2.4
 '''
 a,b,c=eval(raw_input("enter three number:"))
 if a>b:
@@ -141,7 +141,7 @@ if b>c:
     b,c=c,b
 print(a,b,c)
 '''
-#13
+#2.5
 '''
 price1,weight1=eval(raw_input("Enter weight and price for package 1:"))
 price2,weight2=eval(raw_input("Enter weight and price for package 2:"))
@@ -152,9 +152,9 @@ if a>b:
 else:
     print("Package 1 has the better price.")
 '''
-#14
+#2.6
 
-#15
+#2.7
 '''
 import random
 num=random.randint(0,1)
@@ -164,21 +164,21 @@ if x==num:
 else:
     print("False")
 '''
-#16
+#2.8
 '''
 import random
 num=random.randint(0,1,2)
 x=eval(raw_input("scissor(0),rock(1),paper(2):"))
 if num==0:
     '''
-#17
+#2.10
 '''
 import random
 a=random.choice(['Ace','2','3','4','5','6','7','8','9','10','Jack','Queen','King'])
 b=random.choice(['flower','redpeach','square','blackpeach'])
 print("The card you picked is the {} of {}".format(a,b))
 '''
-#18
+#2.11
 '''
 import math
 number=eval(raw_input("Enter a three-digit:"))
@@ -189,7 +189,7 @@ if(a==b):
 else:
     print("{} is not a palindrome".format(number))
 '''
-#19
+#2.12
 '''
 import math
 a,b,c=eval(raw_input("Enter three edges:"))
