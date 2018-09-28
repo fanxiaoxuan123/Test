@@ -81,7 +81,14 @@ for i in "1329076463@qq.com":
     res=res+chr(ord(i)+2)
 print(res)
 '''
-
+#1.8(2)
+new text=''
+for i in text:
+    new = chr(ord(i)+1)
+    new text =new text+new
+print(new text)
+with open('wohaihao','w') as f:
+    f.write(new text)
 #2.1
 '''
 import math
@@ -110,26 +117,26 @@ else:
     print("False")
 '''
 #2.3
-import math
-number1=eval(raw_input"Enter today's day:")
+'''
+number1=eval(raw_input"Enter today is day:")
 number2=eval(raw_input"Enter the number of days elapsed since today:")
-def today(n):
-    if n==0:
+s=(number1+number2)
+    if s==0:
         return 'Sunday'
-    elif n==1:
+    elif s==1:
         return 'Monday'
-    elif n==2:
+    elif s==2:
         return 'Tuesday'
-    elif n==3:
+    elif s==3:
         return 'Wednesday'
-    elif n==4:
+    elif s==4:
         return 'Thursday'
-    elif n==5:
+    elif s==5:
         return 'Friday'
-    elif n==6:
+    elif s==6:
         return 'Saturday'
-s=number2%7
-print("Today is {} and the future day is {}".format(today(number1),today(s)))
+print("Today is {} and the future day is {}".format(number1,s))
+'''
 #2.4
 '''
 a,b,c=eval(raw_input("enter three number:"))
